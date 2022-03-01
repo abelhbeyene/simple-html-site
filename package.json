@@ -1,0 +1,18 @@
+{
+  "name": "simple-html-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"sass --watch style.scss ./build/style.css\" \"serve\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "sass": "^1.49.9",
+    "serve": "^13.0.2"
+  }
+}
