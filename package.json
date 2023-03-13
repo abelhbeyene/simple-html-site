@@ -5,6 +5,7 @@
   "engines": {
     "node": "16"
   },
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "dev": "concurrently \"npx nodemon php/index.js\" \"sass --watch style.scss ./build/style.css\" \"serve\""
