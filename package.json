@@ -2,19 +2,23 @@
   "name": "simple-html-site",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "16"
+  },
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"sass --watch style.scss ./build/style.css\" \"serve\"",
-    "start": "sass style.scss ./build/style.css && serve"
+    "dev": "concurrently \"npx nodemon php/index.js\" \"sass --watch style.scss ./build/style.css\" \"serve\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "sass": "^1.49.9",
-    "serve": "^13.0.2"
+    "node-php-server": "^0.1.2"
   },
   "devDependencies": {
-    "concurrently": "^7.0.0"
+    "concurrently": "^7.0.0",
+    "nodemon": "^2.0.16",
+    "sass": "^1.49.9",
+    "serve": "^13.0.2"
   }
 }
